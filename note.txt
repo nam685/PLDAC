@@ -1,0 +1,4 @@
+Machine: 502 509 415/419 gpu
+
+KILT: around 2500 - 3000 words per document
+MARCO: around 1000 - 1200 words per document
