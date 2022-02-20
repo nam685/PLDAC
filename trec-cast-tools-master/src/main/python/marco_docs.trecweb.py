@@ -70,9 +70,10 @@ if __name__ == "__main__":
     with io.open(marco_file, "r", encoding="utf-8") as input:
 
         for line in tqdm(input, total=3213835):
-
+            print(line)
+            print(line.strip().split('\t', 2))
             # Split to get the original id and text
-            url, text = line.strip().split('\t', 1)
+            idx, url, text = line.strip().split('\t', 2)
     
             # Create a trecweb entry for a passage
             write_to_file(idx, text)
